@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="chat, user, comments, wide" />
+    <title>Chat section</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        function openTab(evt, tabName) {
+            var sharingTab = document.getElementById("Sharing");
+            var chattingTab = document.getElementById("Chatting");
+            var sendButton = document.getElementById("sendButtonDiv");
+
+            if (tabName == sharingTab.id) {
+                document.getElementById(tabName).style.display = "block";
+                chattingTab.style.display = "none";
+                sendButton.style.display = "none";
+
+            }
+            else {
+                document.getElementById(tabName).style.display = "block";
+                sharingTab.style.display = "none";
+                sendButton.style.display = "block";
+            }
+
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body>
+    <div style="padding: 2% 2% 2% 2%; margin-left: 2%; margin-top: 2%; margin-bottom: 2%; width: 96%; height: 100%;">
+    <section class="horizontal">
+            <nav class="tabs">
+                <ul style="margin-bottom:100%;">
+                    <li class="tabBorder">
+                        <a href="#" class="namesoftab" style="padding-top:6px; font-size:1.3em;" onclick="openTab(event, 'Chatting')">Chat</a>
+                        <img class="imgcross" src="images/remove3.png" style="float: right;" />
+                      
+                        <div id="Chatting" style="margin-top: 40px; overflow-y: scroll; height: 600px;">
+                            <ul class="comment-section">
+                                <li class="comment user-comment">
+                                    <a class="avatar" href="#">
+                                        <img src="images/avatar_user_1.jpg" width="35" alt="Profile Avatar" title="Anie Silverston" />
+                                    </a>
+                                    <p>
+                                        <span class="userName">Anie Silverston</span>
+                                        <span class="pingTime">16 min ago</span><br />
+                                        i noticed it yesterday only, and before reading your article. I wonder if they aren't only now starting to
+                                        roll it out completely (and may be coded the feature back in November).
+                                    </p>
+                                </li>
+                                <li class="comment user-comment">
+
+                                    <a class="avatar" href="#">
+                                        <img src="images/avatar_author.jpg" width="35" alt="Profile Avatar" title="Jack Smith" />
+                                    </a>
+                                    <p style=" background-color: #F8EEFB;">
+                                        <span class="userNamePink">Jack Smith</span>
+                                        <span class="pingTime">12 min ago</span><br>
+                                        This is important stuff.Does it have a wikipedia entry yet?
+                                    </p>
+                                </li>
+                                <li class="comment user-comment">
+
+                                    <a class="avatar" href="#">
+                                        <img src="images/avatar_user_2.jpg" width="35" alt="Profile Avatar" title="Bradley Jones" />
+                                    </a>
+                                    <p>
+                                        <span class="userName">Bradley Jones</span>
+                                        <span class="pingTime">11 min ago</span><br>
+                                        it's there from a long time .... 2+ years back, i came to know about this via littlebigdetails.com
+                                    </p>
+                                </li>
+                                <li class="comment user-comment">
+                                    <a class="avatar" href="#">
+                                        <img src="images/avatar_author.jpg" width="35" alt="Profile Avatar" title="Jack Smith" />
+                                    </a>
+                                    <p style=" background-color: #F8EEFB;">
+                                        <span class="userNamePink">Jack Smith</span>
+                                        <span class="pingTime"> 5 min ago</span> <br>
+                                        video testimonials can be recorded from anywhere with modulates video recorder and then upload from anywhere.
+                                    </p>
+                                </li>
+                                <li class="comment user-comment">
+
+                                    <a class="avatar" href="#">
+                                        <img src="images/avatar_user_2.jpg" width="35" alt="Profile Avatar" title="Bradley Jones" />
+                                    </a>
+                                    <p>
+                                        <span class="userName">Bradley Jones</span>
+                                        <span class="pingTime">11 min ago</span> <br>
+                                        it's there from a long time .... 2+ years back, i came to know about this via littlebigdetails.com
+                                    </p>
+                                </li>
+                                <li class="comment user-comment">
+                                    <a class="avatar" href="#">
+                                        <img src="images/avatar_author.jpg" width="35" alt="Profile Avatar" title="Jack Smith" />
+                                    </a>
+                                    <p style=" background-color: #F8EEFB;">
+                                        <span class="userNamePink">Jack Smith</span>
+                                        <span class="pingTime">5 ming ago</span> <br>
+                                        youtube vedios and other tutorials are available from everywhere.
+                                    </p>
+                                </li>
+                                <li class="comment user-comment">
+                                    <a class="avatar" href="#">
+
+                                        <img src="images/antriksh-patel.jpg" width="35" alt="Profile Avatar" title="Antriksh Patel" />
+                                    </a>
+                                    <p>
+                                        <span class="userName">Antriksh Patel</span>
+                                        <span class="pingTime">1 min ago</span> <br>
+                                        it's there from a long time.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="sendButtonDiv">
+                            <hr>
+                            <ul>
+                                <li class="write-new">
+                                    <form action="#" method="post">
+                                        <div class="info" style="float: left;">
+                                            <img src="images/avatar_user_2.jpg" width="35" alt="Profile of Bradley Jones" title="Bradley Jones" />
+                                        </div>
+                                        <div style="float: left;padding: .9em">
+                                            <textarea placeholder="Say something..." name="comment" style="background-color: #F7F7F7;border:none;"></textarea>
+                                        </div>
+                                        <div style="float: left; margin-top:6%">
+                                            <button type="submit">SEND</button>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li style="border-top: solid; border-color: #668AE8;border-top-width:0.2em;" class="tabBorder">
+                        <a href="#" class="namesoftab" style="padding-top:6px;font-size:1.3em;" onclick="openTab(event, 'Sharing')">Screen Sharing</a>
+                        <img class="imgcross" src="images/remove3.png" style="float: right;" />
+                        <div id="Sharing" style="display: none;">
+
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+</body>
+</html>
