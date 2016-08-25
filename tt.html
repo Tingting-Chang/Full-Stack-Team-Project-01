@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Collaboration.Modern Developer</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" type="text/css" href="./main.css"> -->
+	<link rel="stylesheet" type="text/css" href="./tt.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<a href="#">
+				<span>Collaboration</span>.Modern Developer
+			</a>
+			<div class="roomSet">
+				ROOM NAME
+				<a href="#"><img src="./img/settingLogo.gif"></a>
+			</div>
+		</header>
+		<section class="setting">
+			<div class="room">
+				<span>Room Name</span>
+				<a href="#"><img src="./img/edit.gif" ></a>
+				<p>Change the details of this chatroom here</p>
+			</div>
+			<div class="setRC clear">
+				<div class="roles headline">
+					<div class="roleAdd">
+						<h2>ROLES</h2>
+						<input type="button" name="add_new" value="+ add new">
+						<p class="grayText">Eu nulla morbi, eros placerat mattis lectus</p>
+					</div>
+					<ul class="roleList clear">
+						<li>
+							<span class="author">Alex Miller</span>
+							<a href="#"><img src="./img/edit.gif"></a>
+							<span class="jobTitle">Product Manager</span>
+						</li>
+						<li>
+							<span class="author">James Morrison</span>
+							<a href="#"><img src="./img/edit.gif"></a>
+							<span class="jobTitle">3D Animator</span>
+						</li>
+						<li>
+							<span class="author">Miranda Lopez</span>
+							<a href="#"><img src="./img/edit.gif"></a>
+							<span class="jobTitle">Concept Artist</span>
+						</li>
+						<li>
+							<span class="author">Alex Miller</span>
+							<a href="#"><img src="./img/edit.gif"></a>
+							<span class="jobTitle">Product Manager</span>
+						</li>
+					</ul>
+				</div>
+				<div class="colors">
+					<div class="colorSet headline">
+						<h2>COLORS</h2>
+						<div class="port">
+							<a href="#"><span class="portColor">import</span></a> 
+							or
+							<a href="#"><span class="portColor">export</span></a>
+						</div>
+						<p class="grayText">These colors are for the entire room</p>
+					</div>
+					<ul class="colorsList">
+						<li>
+							<span>Application</span>
+							<div class="appColor colorPanel">
+								<div class="appCir"></div>
+								<span>#DD77CB</span>
+								<a href="#"><img src="./img/edit.gif"></a>
+							</div>
+							<p class="grayText">The general color used for the application</p>
+						</li>
+						<li>
+							<span>Box Value</span>
+							<div class="bgColor colorPanel">
+								<div class="bgCir"></div>
+								<span>#6C84DC</span>
+								<a href="#"><img src="./img/edit.gif"></a>
+							</div>
+							<p class="grayText">The value of message backgrounds</p>
+						</li>
+						<li>
+							<span>Text Color</span>
+							<div class="textColor colorPanel">
+								<div class="textCir"></div>
+								<span>#8D8D8D</span>
+								<a href="#"><img src="./img/edit.gif"></a>
+							</div>
+							<p class="grayText">The message text color</p> 
+						</li>
+					</ul>
+				</div>
+			</div>				
+		</section>
+		<section class="app clear">
+			<span id="closeSet">close settings</span>
+			<div id="chat">
+				<h3>Chat</h3>
+				<input type="button" name="add_panel" value="+ add panel">
+				<div id="chatting">
+					
+				</div>
+			</div>
+			<div class="editor clear">
+				<div class="editorTop">
+					<input type="button" name="add_panel" value="+ add panel">
+					<ul>
+						<li class="on">Code Editor <span id="close">X</span></li>
+					</ul>
+					<!-- <h3 class="on"></h3> -->
+				</div>
+				
+				<div id="code">
+					<ul class="codeList">
+						<img src="./img/slider.gif">
+						<li class="init clear">
+							<span class="line">0</span>
+							<p></p>
+						</li>
+						<li class="clear">
+							<span class="line">1</span>
+							<span class="doc">&lt;!DOCTYPE html&gt;</span>
+						</li>
+						<li>
+							<span class="line">2</span>
+							&lt;<span class="htmlTag">html</span> <span class="attri">lang</span>="<span>en</span>"&gt;
+						</li>
+						<li>
+							<span class="line">3</span>
+							&lt;<span class="htmlTag">head</span>&gt;
+						</li>
+						<li>
+							<span class="line">4</span>
+							&lt;<span class="htmlTag">title</span>&gt;ACE in Action<span class="htmlTag">&lt;title</span>&gt;
+						</li>
+						<li>
+							<span class="line">5</span>
+							&lt;<span class="htmlTag">style</span> <span class="attri">type</span>="<span class="value">text/css</span>"&gt;
+						</li>
+						<li>
+							<span class="line">6</span>
+							<span class="idName">#editor</span> {
+						</li>
+						<li>
+							<span class="line">7</span>
+							<span class="property">position</span>: <span class="param">absolute</span>;
+						</li>
+						<li>
+							<span class="line">8</span>
+							<span class="property">top</span>: <span class="param">0</span>;
+						</li>
+						<li>
+							<span class="line">9</span>
+							<span class="property">right</span>: <span class="param">0</span>;
+						</li>
+						<li>
+							<span class="line">10</span>
+							<span class="property">bottom</span>: <span class="propeValue">0</span>;
+						</li>
+						<li>
+							<span class="line">11</span>
+							<span class="property">left</span>: <span class="param">0</span>;
+						</li>
+						<li>
+							<span class="line">12</span>
+							}
+						</li>
+						<li>
+							<span class="line">13</span>
+							&lt;/<span class="htmlTag">style&gt;</span>
+						</li>
+						<li>
+							<span class="line">14</span>
+							&lt;/<span class="htmlTag">head&gt;</span>
+						</li>
+						<li>
+							<span class="line">15</span>
+							&lt;<span class="htmlTag">body&gt;</span>
+						</li>
+						<li class="clear">
+							<span class="line">16</span>
+							<p></p>
+						</li>
+						<li>
+							<span class="line">17</span>
+							&lt;<span class="htmlTag">div</span> <span class="attri">id</span>=" <span class="value">editor</span>"&gt;<span class="function">function</span><span class="funcName"> foo</span> (<span class="value">items</span>) {
+						</li>
+						<li>
+							<span class="line">18</span>
+							<span class="keywords">var </span><span class="variable">x</span><span class="assign">=</span>"All this is syntax highlighted";
+						</li>
+						<li>
+							<span class="line">19</span>
+							<span class="keywords">return </span><span class="variable"> x</span>;
+						</li>
+						<li>
+							<span class="line">20</span>
+							}&lt;/<span class="htmlTag">div</span>&gt;
+						</li>
+						<li class="clear">
+							<span class="line">21</span>
+							<p></p>
+						</li>
+						<li>
+							<span class="line">22</span>
+							&lt;<span class="script">script</span><span class="attri">src</span>="<span class="value">/ace-builds/src-noconflict/ace.js</span>" <span class="attri">type</span> ="<span class="value">text/javascript</span>"
+						</li>
+						<li>
+							<span class="line">23</span>
+							<span class="attri">charset</span>="<span class="value">utf-8</span>"&gt;
+							&lt;/<span class="script">script</span>&gt;
+						</li>
+						<li>
+							<span class="line">24</span>
+							&lt;<span class="script">script</span>&gt;
+						</li>
+						<li>
+							<span class="line">25</span>
+							<span class="keywords">var</span><span class="variable">editor</span><span class="assign">=</span><span class="function">ace</span><span class="funcName">.edit</span>("<span class="value">editor</span>");
+						</li>
+						<li>
+							<span class="line">26</span>
+							<span class="variable">editor</span><span class="funcName">.setTheme</span>("<span class="value">ace/theme/monokai</span>");
+						</li>
+						<li>
+							<span class="line">27</span>
+							<span class="variable">editor</span><span class="funcName">.getSession</span>()<span class="funcName">.setMode</span>("<span class="value">ace/mode/javascript</span>");
+						</li>
+						<li>
+							<span class="line">28</span>
+							&lt;/<span class="script">script</span>&gt;
+						</li>
+						<li>
+							<span class="line">29</span>
+							&lt;/<span class="htmlTag">body</span>&gt;
+						</li>
+						<li>
+							<span class="line">30</span>
+							&lt;/<span class="htmlTag">html</span>&gt;
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
