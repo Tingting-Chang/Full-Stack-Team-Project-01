@@ -1,0 +1,749 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', 'Roboto Slab', serif;
+	font-size: 12px;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	border: none;
+	vertical-align: top;
+}
+
+.clear {
+	zoom: 1;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.wrapper {
+	width: 1600px;
+	height: 1378px;
+}
+
+
+/*************************************************************
+MAIN
+**************************************************************/
+
+.setting {
+	width: ;
+}
+
+.room {
+	border-bottom: 1px solid #e4e7e9;
+	margin: 0 auto;
+	width: 1186px;
+	padding-left: 14px;
+}
+
+.room span {
+	font-size: 23px;
+	font-weight: normal;
+}
+
+.room a img {
+	margin-left: 10px;
+	margin-top: 5px;
+	width: 14px;
+	height: 18px;
+	cursor: pointer;
+}
+
+
+.room p {
+	font-size: 16px;
+	line-height: 48px;
+	color: #8d8d8d;
+	padding-bottom: 32px;
+	font-weight: 300;
+}
+
+.setRC {
+	width: 1213px;
+	margin: 0 auto;
+}
+
+.roles {
+	width: 543px;
+	float: left;
+}
+
+.roleAdd {
+	position: relative;
+	border-bottom: 1px solid #e4e7e9;
+	padding: 0 0 20px 23px;
+}
+
+.headline h2 {
+	margin-top: 48px;
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.roleAdd input {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	border: none;
+	color: #6b91ff;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.grayText {
+	font-size: 10px;
+	color: #d4d4d4;
+}
+
+.roleList {
+	width: 520px;
+	
+}
+
+.roleList li {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 46px;
+	padding-right: 12px;
+	/*border: 1px solid green;*/
+
+}
+
+.roleList li:nth-child(2n) {
+	background-color: #f8f8f8;
+}
+
+.roleList li span {
+	padding-left: 23px;
+}
+
+.jobTitle {
+	font-size: 12px;
+	font-style: italic;
+	color: #6f6f6f;
+	float: right;
+	padding-right: 5px;
+	/*border: 1px solid green;*/
+}
+
+.roleList li img {
+	/*border: 1px solid green;*/
+	width: 11px;
+	height: 13px;
+	float: right;
+	padding-top: 16px;
+	/*padding-right: 12px;*/
+}
+
+.colors {
+	width: 550px;
+	float: left;
+	padding-left: 103px;
+}	
+
+.colorSet {
+	position: relative;
+	border-bottom: 1px solid #e4e7e9;
+	padding: 0 0 20px 23px;
+}
+
+.port {
+	color: #d4d4d4;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+
+.portColor {
+	color: #6b91ff;
+}
+
+
+.colorsList {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 46px;
+	padding-right: 12px;
+	padding-left: 23px;
+}
+
+.colorsList p {
+	margin-top: -30px;
+	width: 240px;
+	
+}
+
+.colorsList li {
+	padding-top: 5px;
+	height: 62px;
+	padding-right: 12px;
+}
+.colorsList li img {
+	width: 11px;
+	height: 13px;
+	float: right;
+	padding-top: 16px;
+}
+
+
+.colorPanel {
+	float: right;
+	width: 100px;
+	height: 25px;
+	background-color: #f2f2f6;
+	margin-top: 20px;
+}
+
+.colorPanel div {
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	margin: 5px 5px 5px 7px;
+	float: left;
+}
+
+.colorPanel span {
+	line-height: 28px;
+	height: 28px;
+	vertical-align: top;
+}
+
+.colorPanel a img {
+	width: 10px;
+	height: 13px;
+	margin-top: -8px;
+	margin-right: 5px;
+}
+
+.roleList li img {
+	width: 11px;
+	height: 13px;
+	float: right;
+	padding-top: 16px;
+}
+
+.appCir {
+	background-color: #dd77cb;
+}
+
+.appCir + span {
+	color: #dd77cb;
+}
+
+.bgCir {
+	background-color: #6C84DC;
+}
+
+.bgCir + span {
+	color: #6C84DC;
+}
+
+.textCir {
+	background-color: #8D8D8D;
+}
+
+.textCir + span {
+	color: #8D8D8D;
+}
+
+
+
+/*************************************************************
+APP
+**************************************************************/
+
+
+.app {
+	width: 1400px;
+	background-color: #f1f6f9;
+	/*border: 1px solid green;*/
+	padding: 64px 100px 100px 100px;
+	position: relative;
+}
+
+#closeSet {
+	/*width: 100%;*/
+	position: absolute;
+	right: 120px;
+	top: 10px;
+	color: #d2dae1;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+#chat {
+	float: left;
+	width: 49%;
+	background-color: #fff;
+	min-height: 629px;
+	box-shadow: 0 0 1px #999;
+}
+
+
+.chat {
+	float: left;
+	width: 50%;
+	background-color: #fff;
+	min-height: 623px;
+
+}
+
+.chatTop {
+	background-color: #f1f6f9;
+}
+
+.chatTop ul {
+	border-bottom:1px solid rgba(189, 189, 189, 0.2);
+	display: block;
+	height: 38px;
+	line-height: 38px;
+
+}
+
+.chatTop ul li {
+	
+	display: inline-block;
+	width: 130px;
+	height: 32px;
+	line-height: 32px;
+	border-top: 3px solid #668AE8;
+	font-size: 14px;
+	color:#668AE8;
+	font-weight: normal;
+    border-bottom:none;
+    width:120px;
+    cursor: pointer;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.chatTop ul li.on{
+    border-top:5px solid #668AE8;
+    border-radius: 1px;
+    border-bottom: 3px solid #fff;
+    /*border-top:none;
+    border-right:1px solid #668AE8;*/
+}
+
+
+.chatTop ul li.off{
+    color:black;
+    border-top:5px solid;
+    border-color:#DFE5E8;
+    border-radius: 1px;
+    background-color:#DFE5E8;
+    
+}
+#close {
+	color: #d9d9d9;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+
+.chatTop input {
+	float: right;
+	border: none;
+	color:#668AE8;
+	background-color: #f1f6f9;
+	padding-right: 15px;
+	padding-top: 10px;
+	cursor: pointer;
+}	
+
+
+.comment-section {
+    padding-left: 20px;
+    list-style: none;
+    max-width: 800px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 10px;
+    float: left;
+}
+
+.comment {
+    display: flex;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+    .comment.user-comment {
+        color: black;
+ 
+       
+    }
+
+    .comment.author-comment {
+        color: black;
+        justify-content: flex-end;
+       font-family: 'Roboto Slab', serif;
+    }
+
+    /* User and time info */
+
+    .comment .info {
+        width: 17%;
+    }
+
+    .comment.user-comment .info {
+        text-align: right;
+    }
+
+    .comment.author-comment .info {
+        order: 3;
+    }
+
+
+    .comment .info a { /* User name */
+        display: block;
+        text-decoration: none;
+        color: #656c71;
+        font-weight: bold;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding: 10px 0 3px 0;
+    }
+
+    .comment .info span { /* Time */
+        font-size: 11px;
+        color: #9ca7af;
+    }
+
+
+    /* The user avatar */
+
+    .comment .avatar {
+        width: 8%;
+    }
+
+    .comment.user-comment .avatar {
+        padding: 10px 18px 0 3px;
+    }
+
+    .comment.author-comment .avatar {
+        order: 2;
+        padding: 10px 3px 0 18px;
+    }
+
+    .comment .avatar img {
+        display: block;
+        border-radius: 50%;
+    }
+
+    .comment.user-comment .avatar img {
+        float: right;
+    }
+
+    /* The comment text */
+
+    .comment p {
+       
+        line-height: 1.5;
+        padding: 18px 22px;
+        width: 500px;
+        position: relative;
+        word-wrap: break-word;
+        border-radius: 5px;
+        font-size: 1.5em;
+        text-align:left;
+    }
+
+    .comment.user-comment p {
+        /*background-color:  #f3f3f3;*/
+        background-color: #E9EEFB;
+    }
+
+    .comment.author-comment p {
+        /*background-color:  #e2f8ff;*/
+        background-color: #F8EEFB;
+        order: 1;
+    }
+
+.user-comment p:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #f3f3f3;
+    left: -8px;
+    top: 18px;
+}
+
+.author-comment p:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #e2f8ff;
+    right: -8px;
+    top: 18px;
+}
+
+
+
+
+/* Comment form */
+
+/*.write-new {
+    margin: 10px auto 0;
+    width: 50%;
+    margin-left: 13%;
+
+ 
+}*/
+
+.write-new{
+    margin-left:5%;
+}
+
+    .write-new textarea {
+
+        background-color: #F7F7F7;
+        border:none;
+        /*width:10em;*/
+        color: #444;
+        font: inherit;
+        outline: 0;
+        border-radius: 3px;
+        border: 1px solid #cecece;
+        background-color: #fefefe;
+        box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.06);
+        overflow: auto;
+        width: 400px;
+        min-height: 80px;
+        padding: 15px 20px;
+    }
+
+    .write-new img {
+        border-radius: 50%;
+        margin-top: 15px;
+    }
+
+    .write-new button {
+        float: right;
+        background-color: #6486EA;
+        box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 2px;
+        border: 0;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 10px 25px;
+        margin-top:90px;
+  
+    }
+
+
+/* Responsive styles */
+
+@media (max-width: 800px) {
+    /* Make the paragraph in the comments take up the whole width,
+    forcing the avatar and user info to wrap to the next line*/
+    .comment p {
+        width: 100%;
+    }
+
+    /* Reverse the order of elements in the user comments,
+    so that the avatar and info appear after the text. */
+    .comment.user-comment .info {
+        order: 3;
+        text-align: left;
+    }
+
+    .comment.user-comment .avatar {
+        order: 2;
+    }
+
+    .comment.user-comment p {
+        order: 1;
+    }
+
+    /* Align toward the beginning of the container (to the left)
+    all the elements inside the author comments. */
+    .comment.author-comment {
+        justify-content: flex-start;
+    }
+
+
+    .comment-section {
+        margin-top: 10px;
+    }
+
+    .comment .info {
+        width: auto;
+    }
+
+        .comment .info a {
+            padding-top: 15px;
+        }
+
+    .comment.user-comment .avatar,
+    .comment.author-comment .avatar {
+        padding: 15px 10px 0 18px;
+        width: auto;
+    }
+
+    .comment.user-comment p:after,
+    .comment.author-comment p:after {
+        width: 12px;
+        height: 12px;
+        top: initial;
+        left: 28px;
+        bottom: -6px;
+    }
+
+    
+}
+
+.tabs {
+    float: left;
+    width: 20%;
+}
+
+    .tabs ul, ul {
+        list-style: none;
+    }
+
+    .tabs li {
+        padding: 6px;
+        width: 100%;
+        background: #fff;
+        /*background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(lightgray));*/
+        /*  background: -moz-linear-gradient(top, white, lightgray);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#E0E0E0');
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+        -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+        box-shadow: 0 1px 2px rgba(0,0,0,.2);*/
+        /*text-transform: uppercase;*/
+        cursor: pointer;
+        font-size: 1em;
+        border-radius: 5px 5px 0 0;
+    }
+
+        .tabs li.selected a {
+            color: white;
+            cursor: default;
+        }
+
+        .tabs li a {
+            min-width: 150px;
+            width: 80%;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.8em;
+            outline: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+        }
+
+.namesoftab {
+    color: #668AE8;
+    
+}
+
+.horizontal nav {
+    width: 100%;
+}
+
+.horizontal ul {
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal nav li {
+    min-width: 15%;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+.tabBorder {
+    border: 1px solid white;
+    border-top: solid; 
+    border-top-color: #668AE8; 
+    border-top-width: 0.2em; 
+    border-radius: 100%; 
+}
+
+.userName {
+    float: left;
+    color: rgb(0,0,238);
+    margin-left: 2px;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.userNamePink {
+    float: left;
+    color: #BA7FCB;
+    margin-left: 2px;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.pingTime {
+    float: right;
+    font-size: 14px;
+    color: #9ca7af;
+}
+
+::-webkit-scrollbar {
+    width: 3px; /* for vertical scrollbars */
+    height: 5px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    /*background: rgba(0, 0, 255, 0.5);*/
+    /*background:#D9E4EA;*/
+   background-color:grey;
+    border-radius: 10%;
+}
+
+
+#wrapper {
+  width:450px;
+  clear:both;
+}
+#first {
+  
+  width:150px;
+  float:left;
+}
+#second {
+ 
+  width:150px;
+  float:left;
+}
+#third {
+ 
+  width:150px;
+  float:left;
+}
